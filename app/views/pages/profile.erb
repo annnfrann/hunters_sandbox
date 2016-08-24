@@ -1,0 +1,9 @@
+<% @title = "profile" %>
+
+<h2>profile for: <%= current_user.email %></h2>
+
+<%= form_for :Changes do |f| %>
+    <%= f.text_field :first_name, placeholder: "first name" %>
+    <%= f.text_field :last_name, placeholder: "last name" %>
+    <%= f.submit %>
+<% end %>

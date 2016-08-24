@@ -17,7 +17,9 @@ Rails.application.routes.draw do
 
   get 'hunt' => 'users#hunt'
   get 'sell' => 'users#sell'
-  get 'feed' => 'users#feed'
+  get 'feed' => 'products#index'
+  get 'profile' => 'pages#profile'
+  post 'profile' => 'pages#profile'
 
   get 'cart' => 'carts#show'
   get 'wishlist' => 'wishlist#index'
